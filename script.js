@@ -86,7 +86,7 @@ function gamePlay() {
         if (keys.ArrowUp && player.y > (road.top + 120)) { player.y -= player.speed } // keep car 120px down from top
         if (keys.ArrowDown && player.y < (road.bottom - 80)) { player.y += player.speed } //stop car to going down out of screen
         if (keys.ArrowLeft && player.x > 0) { player.x -= player.speed }// work left key & car do not cross the left end of road
-        if (keys.ArrowRight && player.x < (road.width - 50)) { player.x += player.speed } //"player.x < (road.width-50)" stopes the car to cross the right end of the road
+        if (keys.ArrowRight && player.x < (road.width - 64)) { player.x += player.speed } //"player.x < (road.width-50)" stopes the car to cross the right end of the road
 
         car.style.top = player.y + "px";
         car.style.left = player.x + "px";
